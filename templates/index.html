@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Test projets s8</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <table>
+        <tr>
+            <th>numero</th>
+            <th>object</th>
+            <th>status</th>
+        </tr>
+        {% for test in tests %}
+            <tr>
+                <td>{{test.numero}}<td>
+                <td>{{test.object}}</td>
+                <td>{{test.status}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
