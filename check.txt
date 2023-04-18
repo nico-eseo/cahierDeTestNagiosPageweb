@@ -1,0 +1,35 @@
+Début du script de vérification des commandes de service pour le hosts nginx.e3.sirt.tp
+Résultat attendu check_ping 'OK'. Resultat réel : PING OK - Packet loss = 0%, RTA = 1.45 ms|rta=1.450000ms;100.000000;500.000000;0.000000 pl=0%;20;60>
+Résultat attendu check_ssh 'OK'. Resultat réel : SSH OK - OpenSSH_8.4p1 Debian-5+deb11u1 (protocol 2.0) | time=0.033122s;;;0.000000;10.000000
+Résultat attendu check_load 'OK'. Resultat réel :
+Résultat attendu check_memory 'OK'. Resultat réel :
+Résultat attendu check_swap 'OK'. Resultat réel :
+Résultat attendu check_disk 'OK'. Resultat réel :
+Début du script de vérification des commandes de service pour le hosts web1.e3.sirt.tp
+Résultat attendu check_ping 'OK'. Resultat réel : PING CRITICAL - Packet loss = 100%|rta=500.000000ms;100.000000;500.000000;0.000000 pl=100%;20;60;0
+Résultat attendu check_ssh 'OK'. Resultat réel : CRITICAL - Socket timeout
+Résultat attendu check_load 'OK'. Resultat réel : CHECK_NRPE STATE CRITICAL: Socket timeout after 10 seconds.
+Résultat attendu check_memory 'OK'. Resultat réel : CHECK_NRPE STATE CRITICAL: Socket timeout after 10 seconds.
+Résultat attendu check_swap 'OK'. Resultat réel : CHECK_NRPE STATE CRITICAL: Socket timeout after 10 seconds.
+Résultat attendu check_disk 'OK'. Resultat réel : CHECK_NRPE STATE CRITICAL: Socket timeout after 10 seconds.
+Début du script de vérification des commandes de service pour le hosts gitea.e3.sirt.tp
+Résultat attendu check_ping 'OK'. Resultat réel : PING OK - Packet loss = 0%, RTA = 0.92 ms|rta=0.921000ms;100.000000;500.000000;0.000000 pl=0%;20;60>
+Résultat attendu check_ssh 'OK'. Resultat réel : SSH OK - OpenSSH_8.4p1 Debian-5+deb11u1 (protocol 2.0) | time=0.013528s;;;0.000000;10.000000
+Résultat attendu check_load 'OK'. Resultat réel :
+Résultat attendu check_memory 'OK'. Resultat réel :
+Résultat attendu check_swap 'OK'. Resultat réel :
+Résultat attendu check_disk 'OK'. Resultat réel :
+Début du script de vérification des commandes de service pour le hosts dns01.e3.sirt.tp
+Résultat attendu check_ping 'OK'. Resultat réel : PING OK - Packet loss = 0%, RTA = 1.25 ms|rta=1.255000ms;100.000000;500.000000;0.000000 pl=0%;20;60>
+Résultat attendu check_ssh 'OK'. Resultat réel : SSH OK - OpenSSH_8.4p1 Debian-5+deb11u1 (protocol 2.0) | time=0.035711s;;;0.000000;10.000000
+Résultat attendu check_load 'OK'. Resultat réel :
+Résultat attendu check_memory 'OK'. Resultat réel :
+Résultat attendu check_swap 'OK'. Resultat réel :
+Résultat attendu check_disk 'OK'. Resultat réel :
+Début du script de vérification des commandes de service pour le hosts nagios.e3.sirt.tp
+Résultat attendu check_ping 'OK'. Resultat réel : PING OK - Packet loss = 0%, RTA = 0.04 ms|rta=0.036000ms;100.000000;500.000000;0.000000 pl=0%;20;60>
+Résultat attendu check_ssh 'OK'. Resultat réel : SSH OK - OpenSSH_8.4p1 Debian-5+deb11u1 (protocol 2.0) | time=0.012331s;;;0.000000;10.000000
+Résultat attendu check_load 'OK'. Resultat réel : CHECK_NRPE: Error - Could not connect to 10.10.10.30: Connection reset by peer
+Résultat attendu check_memory 'OK'. Resultat réel : CHECK_NRPE: Error - Could not connect to 10.10.10.30: Connection reset by peer
+Résultat attendu check_swap 'OK'. Resultat réel : CHECK_NRPE: Error - Could not connect to 10.10.10.30: Connection reset by peer
+Résultat attendu check_disk 'OK'. Resultat réel : CHECK_NRPE: Error - Could not connect to 10.10.10.30: Connection reset by peer
