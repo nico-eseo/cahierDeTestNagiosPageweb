@@ -13,13 +13,17 @@ app = Flask(__name__)
 
 @app.route ('/')
 def index():
+    #ouverture du fichier check.txt
+    file = open('check.txt',mode = 'r', encoding='utf-8-sig')
+    lines = file.readline()
+    dict = {}
+    tests = []
     #envoi de la commande 
-    tests = [
-        Test(1,"nagios http","pass"),
-        Test(2,"nagios ssh","pass"),
-        Test(3,"nagios cpu","pass"),
-        Test(4,"nagios disk","failed")
-    ]
+    for line in lines:
+        line = line.split('-')
+            
+        tests.append(Test(line,'test','test'))
+    file.close()
     return render_template('index.html',tests=tests)
 
 if __name__ == '__main__':
