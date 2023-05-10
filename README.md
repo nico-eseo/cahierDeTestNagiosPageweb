@@ -1,4 +1,5 @@
 # projet_s8_test
+
 stockage de mon pyton pour les tests
 déploiment local
    1) instaler l'instaler pip avec sudo apt-get install python3 pip
@@ -13,4 +14,3 @@ pour le déploiment sur le réseaux interne
 2)pip install mod_wsgi
 
 3)modifier et insaller le fichier de configuration apache2
-
