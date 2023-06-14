@@ -4,19 +4,25 @@
     <meta charset="UTF-8">
     <title>Test projets s8</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="scriptJava/validation.js"></script>
 </head>
 <body>
+    <form id="monFormulaire">
+        <input type="submit" value="Soumettre">
+    </form>
     <table>
         <tr>
             <th>numero</th>
             <th>object</th>
             <th>status</th>
+            <th>validation</th>
         </tr>
         {% for test in tests %}
             <tr>
                 <td>{{test.numero}}<td>
                 <td>{{test.object}}</td>
                 <td>{{test.status}}</td>
+                <td>{{test.validation}}</td>
             </tr>
         {% endfor %}
     </table>
